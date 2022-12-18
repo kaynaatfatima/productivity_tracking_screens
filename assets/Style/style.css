@@ -38554,7 +38554,7 @@ input[type='checkbox']{
 }
 
 .card-sub-header{
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .task-detail-form .add-task{
@@ -38568,8 +38568,8 @@ input[type='checkbox']{
 
 .btn:hover, .nav-link:hover{
     transform: translateY(-2px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.4) !important;
-    transition: all 0.25s ease-in-out;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-track {
@@ -38592,3 +38592,4 @@ input[type='checkbox']{
  {
     scrollbar-color: #330867 #F5F5F5;
 }
+
