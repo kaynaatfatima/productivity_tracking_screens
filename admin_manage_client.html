@@ -151,194 +151,233 @@
                                         class="tab-pane active"
                                         id="create-project-tab"
                                         role="tabpanel">
-                                        
-                                <!-- ====================================== Create Project ========================================= -->
-                                <!-- ========================================================================================== -->
-                                <!-- ========================================================================================== -->
-                                <div
-                                  class="row p-3 pt-0 d-flex flex-wrap card-sub-header position">
-                                  <button
-                                    class="mt-2 btn btn-secondary btn-shadow btn-wide-2x btn-hover-shine mr-2"
-                                    data-toggle="modal"
-                                    data-target="#edit-client-modal">
-                                    Edit Client
-                                  </button>
-                                  <button
-                                    class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2"
-                                    data-toggle="modal"
-                                    data-target="#create-client-modal">
-                                    Create Client
-                                  </button>
-                                </div>
-                                <form class="">
-                                    <div class="form-row pb-2">
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3 pl-4">
-                                      <label class="form-check-label">
-                                        <input
-                                          id="open"
-                                          name="project_status"
-                                          type="radio"
-                                          class="form-check-input"
-                                          checked />Open</label
-                                      >
-                                    </div>
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3 pl-4">
-                                      <label class="form-check-label">
-                                        <input
-                                          id="closed"
-                                          name="project_status"
-                                          type="radio"
-                                          class="form-check-input" />Closed</label
-                                      >
-                                    </div>
-                                  </div>
-                                    <div class="form-row pt-2">
-                                    <div class="col-12">
-                                      <div class="position-relative form-group">
-                                        <label for="description" class=""
-                                          >Business Unit</label
-                                        ><select
-                                          name="city"
-                                          id="business_unit"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="JC">JC</option>
-                                          <option value="JIS">JIS</option>
-                                          <option value="HK">HK</option>
-                                          <option value="JCS">JCS</option>
-                                          <option value="ENA">ENA</option>
-                                          <option value="JBS_export">
-                                            JBS Export
-                                          </option>
-                                          <option value="JBS_devices">
-                                            JBS Devices
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                  </div>
+                                        <!-- ====================================== Create Project ========================================= -->
+                                        <!-- ========================================================================================== -->
+                                        <!-- ========================================================================================== -->
+                                        <div
+                                          class="row p-3 pt-0 d-flex flex-wrap card-sub-header position">
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-wide-2x btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#edit-client-modal">
+                                            Edit Client
+                                          </button>
+                                          <button
+                                            class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#create-client-modal">
+                                            Create Client
+                                          </button>
+                                        </div>
+                                        <form class="">
+                                          <div class="form-row pb-2">
+                                            <div
+                                              class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                              <label class="form-check-label">
+                                                <input
+                                                  id="open"
+                                                  name="project_status"
+                                                  type="radio"
+                                                  class="form-check-input"
+                                                  checked />Open</label
+                                              >
+                                            </div>
+                                            <div
+                                              class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                              <label class="form-check-label">
+                                                <input
+                                                  id="closed"
+                                                  name="project_status"
+                                                  type="radio"
+                                                  class="form-check-input" />Closed</label
+                                              >
+                                            </div>
+                                          </div>
+                                          <div class="form-row pt-2">
+                                            <div class="col-12">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label
+                                                  for="description"
+                                                  class=""
+                                                  >Business Unit</label
+                                                ><select
+                                                  name="city"
+                                                  id="business_unit"
+                                                  type="text"
+                                                  class="form-control">
+                                                  <option value="JC">JC</option>
+                                                  <option value="JIS">
+                                                    JIS
+                                                  </option>
+                                                  <option value="HK">HK</option>
+                                                  <option value="JCS">
+                                                    JCS
+                                                  </option>
+                                                  <option value="ENA">
+                                                    ENA
+                                                  </option>
+                                                  <option value="JBS_export">
+                                                    JBS Export
+                                                  </option>
+                                                  <option value="JBS_devices">
+                                                    JBS Devices
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
 
-                                  <div class="form-row">
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="client" class=""
-                                          >Client</label
-                                        ><select
-                                          name="city"
-                                          id="client"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="-">Select</option>
-                                          <option value="id">I dont</option>
-                                          <option value="know">know</option>
-                                          <option value="whats">what's</option>
-                                          <option value="happening">
-                                            happening
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
+                                          <div class="form-row">
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label for="client" class=""
+                                                  >Client</label
+                                                ><select
+                                                  name="city"
+                                                  id="client"
+                                                  type="text"
+                                                  class="form-control">
+                                                  <option value="-">
+                                                    Select
+                                                  </option>
+                                                  <option value="id">
+                                                    I dont
+                                                  </option>
+                                                  <option value="know">
+                                                    know
+                                                  </option>
+                                                  <option value="whats">
+                                                    what's
+                                                  </option>
+                                                  <option value="happening">
+                                                    happening
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
 
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="description" class=""
-                                          >Description</label
-                                        ><select
-                                          name="city"
-                                          id="client"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="-">Select</option>
-                                          <option value="id">I dont</option>
-                                          <option value="know">know</option>
-                                          <option value="whats">what's</option>
-                                          <option value="happening">
-                                            happening
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label
+                                                  for="description"
+                                                  class=""
+                                                  >Description</label
+                                                ><select
+                                                  name="city"
+                                                  id="client"
+                                                  type="text"
+                                                  class="form-control">
+                                                  <option value="-">
+                                                    Select
+                                                  </option>
+                                                  <option value="id">
+                                                    I dont
+                                                  </option>
+                                                  <option value="know">
+                                                    know
+                                                  </option>
+                                                  <option value="whats">
+                                                    what's
+                                                  </option>
+                                                  <option value="happening">
+                                                    happening
+                                                  </option>
+                                                </select>
+                                              </div>
+                                            </div>
 
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="planned_start_date"
-                                          >Planned Start Date</label
-                                        ><input
-                                          name="date"
-                                          id="planned_start_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="planned_end_date"
-                                          >Planned End Date</label
-                                        ><input
-                                          name="date"
-                                          id="planned_end_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="actual_start_date"
-                                          >Actual Start Date</label
-                                        ><input
-                                          name="date"
-                                          id="actual_start_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="actual_end_date"
-                                          >Actual End Date</label
-                                        ><input
-                                          name="date"
-                                          id="actual_end_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
-                                      </div>
-                                    </div>
-                                  </div>
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label for="planned_start_date"
+                                                  >Planned Start Date</label
+                                                ><input
+                                                  name="date"
+                                                  id="planned_start_date"
+                                                  placeholder="date placeholder"
+                                                  type="date"
+                                                  class="form-control" />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label for="planned_end_date"
+                                                  >Planned End Date</label
+                                                ><input
+                                                  name="date"
+                                                  id="planned_end_date"
+                                                  placeholder="date placeholder"
+                                                  type="date"
+                                                  class="form-control" />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label for="actual_start_date"
+                                                  >Actual Start Date</label
+                                                ><input
+                                                  name="date"
+                                                  id="actual_start_date"
+                                                  placeholder="date placeholder"
+                                                  type="date"
+                                                  class="form-control" />
+                                              </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <div
+                                                class="position-relative form-group">
+                                                <label for="actual_end_date"
+                                                  >Actual End Date</label
+                                                ><input
+                                                  name="date"
+                                                  id="actual_end_date"
+                                                  placeholder="date placeholder"
+                                                  type="date"
+                                                  class="form-control" />
+                                              </div>
+                                            </div>
+                                          </div>
 
-                                  <button
-                                    class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
-                                    Save
-                                  </button>
-                                </form>
+                                          <button
+                                            class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
+                                            Save
+                                          </button>
+                                        </form>
 
-                                <!-- ========================================================================================== -->
-                                <!-- ========================================================================================== -->
-                                <!-- ====================================== card body ========================================= -->
-                              
+                                        <!-- ========================================================================================== -->
+                                        <!-- ========================================================================================== -->
+                                        <!-- ====================================== card body ========================================= -->
                                       </div>
                                       <div
                                         class="tab-pane"
                                         id="create-job-tab"
                                         role="tabpanel">
-                                        <p class="mb-0">HEHEHEHE HEHEHEHE HEHEHEHE HEHEHEHE HEHEHEHE HEHEHEHE</p>
+                                        <p class="mb-0">
+                                          HEHEHEHE HEHEHEHE HEHEHEHE HEHEHEHE
+                                          HEHEHEHE HEHEHEHE
+                                        </p>
                                       </div>
                                       <div
                                         class="tab-pane"
                                         id="create-SLA-tab"
                                         role="tabpanel">
-                                        <p class="mb-0">YEEHAAWWW YOOOHOOO YOLOOOO</p>
+                                        <p class="mb-0">
+                                          YEEHAAWWW YOOOHOOO YOLOOOO
+                                        </p>
                                       </div>
                                       <div
                                         class="tab-pane"
                                         id="create-resource-tab"
                                         role="tabpanel">
-                                        <p class="mb-0">THE STUFF YOU HEARD ABOUT IS A LIE. I'M WAY WORSE.</p>
+                                        <p class="mb-0">
+                                          THE STUFF YOU HEARD ABOUT IS A LIE.
+                                          I'M WAY WORSE.
+                                        </p>
                                       </div>
                                     </div>
                                   </div>
@@ -370,6 +409,7 @@
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
   </body>
 </html>
+
 <!-- ====================== Edit Client modal====================== -->
 
 <div
@@ -753,403 +793,6 @@
               >
             </div>
           </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ====================== Edit Client modal====================== -->
-
-<div
-  class="modal fade"
-  id="edit-client-modal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2 border-bottom">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="project"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Project</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="job"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Job</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />SLA</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="resource"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Resource</label
-              >
-            </div>
-          </div>
-
-          <div class="form-row pt-2 border-bottom">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value="-">Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know" selected>know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control">
-                  <option value="-" selected>Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know">know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Planned Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">Planned End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_start_date">Actual start Date</label
-                ><input
-                  name="date"
-                  id="actual_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_end_date">Actual End Date</label
-                ><input
-                  name="date"
-                  id="actual_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Business Unit</label
-                ><select
-                  name="city"
-                  id="business_unit"
-                  type="text"
-                  class="form-control">
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-row pb-2">
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
-
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" class="btn btn-primary">Save Changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ====================== Create Client modal====================== -->
-
-<div
-  class="modal fade"
-  id="create-client-modal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create New Client</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2 border-bottom">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="project"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Project</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="job"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Job</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />SLA</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="resource"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Resource</label
-              >
-            </div>
-          </div>
-
-          <div class="form-row pt-2 border-bottom">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  >
-                  <option value="-">Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know" selected>know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control">
-                  <option value="-" selected>Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know">know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Planned Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">Planned End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_start_date">Actual start Date</label
-                ><input
-                  name="date"
-                  id="actual_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_end_date">Actual End Date</label
-                ><input
-                  name="date"
-                  id="actual_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Business Unit</label
-                ><select
-                  name="city"
-                  id="business_unit"
-                  type="text"
-                  class="form-control">
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="form-row pb-2">
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" required checked/>Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
-
         </form>
       </div>
       <div class="modal-footer">
