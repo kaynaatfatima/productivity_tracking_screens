@@ -1,173 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Productivity Tracking App</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Build whatever layout you need with our Kero Dashboard." />
+    <link rel="icon" href="favicon.ico" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Language" content="en" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>View Client</title>
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-  <meta name="description" content="Build whatever layout you need with our Kero Dashboard." />
-  <link rel="icon" href="favicon.ico" />
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
 
-  <!-- Disable tap highlight on IE -->
-  <meta name="msapplication-tap-highlight" content="no" />
+    <link href="/assets/Style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-container app-theme-gray">
+      <div class="app-main">
+        <div class="app-sidebar-wrapper">
+          <div class="app-sidebar sidebar-shadow">
+            <div class="app-header__logo">
+              <img class="logo-src" src="/assets/images/jbs-logo.png" alt="" />
+            </div>
+            <div class="scrollbar-sidebar scrollbar-container">
+              <div class="app-sidebar__inner">
+                <ul class="vertical-nav-menu">
+                  <li class="mm-active">
+                    <a href="./admin_view_clients.html">
+                      <i class="fa fa-fw metismenu-icon"></i>View Clients
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./admin_view_activity.html">
+                      <i class="fa fa-fw metismenu-icon"></i>View Resource
+                      tasks
+                    </a>
+                  </li>
 
-  <link href="/css/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="app-container app-theme-gray">
-    <div class="app-main">
-      <div class="app-sidebar-wrapper">
-        <div class="app-sidebar sidebar-shadow">
-          <div class="app-header__logo">
-            <img class="logo-src" src="/assets/images/jbs-logo.png" alt="" />
-          </div>
-          <div class="scrollbar-sidebar scrollbar-container">
-            <div class="app-sidebar__inner">
-              <ul class="vertical-nav-menu">
-                <li class="mm-active">
-                  <a href="./admin_view_clients.html">
-                    <i class="fa fa-fw metismenu-icon"></i>View Clients
-                  </a>
-                </li>
-                <li>
-                  <a href="./create-client.html">
-                    <i class="fa fa-fw metismenu-icon"></i>Create Clients
-                  </a>
-                </li>
-                <li>
-                  <a href="./admin_view_activity.html">
-                    <i class="fa fa-fw metismenu-icon"></i>View Resource tasks
-                  </a>
-                </li>
-
-                <li>
-                  <a href="./admin_assign_resources.html">
-                    <i class="fa fa-fw metismenu-icon"></i>Assign Resources
-                  </a>
-                </li>
-              </ul>
+                  <li>
+                    <a href="./admin_assign_resources.html">
+                      <i class="fa fa-fw metismenu-icon"></i>Assign Resources
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="app-sidebar-overlay d-none animated fadeIn"></div>
-      <div class="app-main__outer">
-        <div class="app-main__inner">
-          <div class="header-mobile-wrapper">
-            <div class="app-header__logo">
-              <img src="/assets/images/jbs-logo.png" class="logo-src" alt="JBS" />
-              <button type="button" class="hamburger hamburger--elastic mobile-toggle-sidebar-nav">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </button>
+        <div class="app-sidebar-overlay d-none animated fadeIn"></div>
+        <div class="app-main__outer">
+          <div class="app-main__inner">
+            <div class="header-mobile-wrapper">
+              <div class="app-header__logo">
+                <img
+                  src="/assets/images/jbs-logo.png"
+                  class="logo-src"
+                  alt="JBS" />
+                <button
+                  type="button"
+                  class="hamburger hamburger--elastic mobile-toggle-sidebar-nav">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="app-header">
-            <div class="page-title-heading">
-              <i class="fa fa-fw mr-2"></i>View Client
+            <div class="app-header">
+              <div class="page-title-heading">
+                <i class="fa fa-fw mr-2"></i> Assign Client
+              </div>
+              <div class="app-header-overlay d-none animated fadeIn"></div>
+              <div class="d-flex flex-row-reverse p-4 log-out">
+                <button
+                  class="btn btn-hover-shine btn-primary btn-wide btn-shadow">
+                  Log out
+                </button>
+                <b class="btn btn-light mr-2">Kaynaat Fatima </b>
+              </div>
             </div>
-            <div class="app-header-overlay d-none animated fadeIn"></div>
-            <div class="d-flex flex-row-reverse p-4 log-out">
-              <button class="btn btn-hover-shine btn-primary btn-wide btn-shadow">
-                Log out
-              </button>
-              <b class="btn btn-light mr-2">Admin </b>
-            </div>
-          </div>
 
-          <div class="app-inner-layout app-inner-layout-page">
-            <div class="app-inner-layout__wrapper">
-              <div class="app-inner-layout__content">
-                <div class="tab-content">
-                  <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
-                    <div class="container-fluid">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="main-card mb-3 card">
-                            <div class="card-body">
-                              <div class="mb-3 card">
-                                <div class="card-body">
-                                  <!-- ******************************** CARD BODY START ***************************** -->
-                                  <!-- ******************************** CARD BODY START ****************************** -->
-                                  <!-- <div class="row p-3 pt-0 d-flex flex-wrap card-sub-header">
-                                    <h4 class="">View Clients</h4>
+            <div class="app-inner-layout app-inner-layout-page">
+              <div class="app-inner-layout__wrapper">
+                <div class="app-inner-layout__content">
+                  <div class="tab-content">
+                    <div
+                      class="tab-pane tabs-animation fade show active"
+                      id="tab-content-0"
+                      role="tabpanel">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="main-card mb-3 card">
+                              <div class="card-body">
+                                <div class="mb-3 card">
+                                  <div class="card-body">
+                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                    <div
+                                      class="row p-3 pt-0 d-flex flex-wrap card-sub-header">
+                                      <h4 class="">Clients</h4>
 
-                                    <button class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2" href="./assign-client.html">
-                                      New Client
-                                    </button>
-                                  </div> -->
-                                  <table id="example" class="mdl-data-table text-center" style="min-width: 100%">
-                                    <thead>
-                                      <tr>
-                                        <th>Type</th>
-                                        <th>BU</th>
-                                        <th>Status</th>
-                                        <th>Client</th>
-                                        <th>Description</th>
-                                        <th>PSD</th>
-                                        <th>PED</th>
-                                        <th>ASD</th>
-                                        <th>AED</th>
-                                        <th>Action</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Resource</td>
-                                        <td>JC</td>
-                                        <td>Billable</td>
-                                        <td>JBS</td>
-                                        <td>Punjab Agriculture</td>
-                                        <td>03-12-22</td>
-                                        <td>03-12-23</td>
-                                        <td>04-12-22</td>
-                                        <td>04-12-23</td>
-                                        <td>
-                                          <button class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                            data-toggle="modal" data-target="#edit-client-modal" title="Edit record.">
-                                            <i class="fa fa-fw" aria-hidden="true"></i>
-                                          </button>
-                                          <button class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                            data-toggle="modal" data-target="#client-detail-modal"
-                                            title="Record detail">
-                                            <i class="fa fa-fw" aria-hidden="true"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>Job</td>
-                                        <td>JBS</td>
-                                        <td>Open</td>
-                                        <td>JBS</td>
-                                        <td>Productivity Tracking System</td>
-                                        <td>03-11-22</td>
-                                        <td>03-12-23</td>
-                                        <td>04-11-22</td>
-                                        <td>04-12-23</td>
-                                        <td>
-                                          <button class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                            data-toggle="modal" data-target="#edit-client-modal" title="Edit record.">
-                                            <i class="fa fa-fw" aria-hidden="true"></i>
-                                          </button>
-                                          <button class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                            data-toggle="modal" data-target="#client-detail-modal"
-                                            title="Record detail">
-                                            <i class="fa fa-fw" aria-hidden="true"></i>
-                                          </button>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                      <a
+                                        href="/admin_create_client.html"
+                                        class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
+                                        Create New Client
+                                      </a>
+                                    </div>
+                                    <table
+                                      id="example"
+                                      class="mdl-data-table text-center"
+                                      style="min-width: 100%">
+                                      <thead>
+                                        <tr>
+                                          <th>Type</th>
+                                          <th>BU</th>
+                                          <th>Status</th>
+                                          <th>Client</th>
+                                          <th>Description</th>
+                                          <th>PSD</th>
+                                          <th>PED</th>
+                                          <th>ASD</th>
+                                          <th>AED</th>
+                                          <th>Action</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td>Resource</td>
+                                          <td>JC</td>
+                                          <td>Billable</td>
+                                          <td>JBS</td>
+                                          <td>Punjab Agriculture</td>
+                                          <td>03-12-22</td>
+                                          <td>03-12-23</td>
+                                          <td>04-12-22</td>
+                                          <td>04-12-23</td>
+                                          <td>
+                                            <button
+                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                              data-toggle="modal"
+                                              data-target="#edit-client-modal"
+                                              title="Edit record.">
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
+                                            </button>
+                                            <button
+                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                              data-toggle="modal"
+                                              data-target="#client-detail-modal"
+                                              title="Record detail">
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
+                                            </button>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Job</td>
+                                          <td>JBS</td>
+                                          <td>Open</td>
+                                          <td>JBS</td>
+                                          <td>Productivity Tracking System</td>
+                                          <td>03-11-22</td>
+                                          <td>03-12-23</td>
+                                          <td>04-11-22</td>
+                                          <td>04-12-23</td>
+                                          <td>
+                                            <button
+                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                              data-toggle="modal"
+                                              data-target="#edit-client-modal"
+                                              title="Edit record.">
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
+                                            </button>
+                                            <button
+                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                              data-toggle="modal"
+                                              data-target="#client-detail-modal"
+                                              title="Record detail">
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
+                                            </button>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
 
-                                  <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
-                                  <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -183,29 +222,39 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="app-drawer-wrapper">
-    <div class="drawer-nav-btn">
-      <button type="button" class="hamburger hamburger--elastic is-active">
-        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-      </button>
+    <div class="app-drawer-wrapper">
+      <div class="drawer-nav-btn">
+        <button type="button" class="hamburger hamburger--elastic is-active">
+          <span class="hamburger-box"
+            ><span class="hamburger-inner"></span
+          ></span>
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="app-drawer-overlay d-none animated fadeIn"></div>
-  <script type="text/javascript" src="/assets/Scripts/main.js"></script>
-</body>
+    <div class="app-drawer-overlay d-none animated fadeIn"></div>
 
+    <script type="text/javascript" src="/assets/Scripts/script.js"></script>
+  </body>
 </html>
 
 <!-- ====================== Edit Client modal====================== -->
 
-<div class="modal fade" id="edit-client-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div
+  class="modal fade"
+  id="edit-client-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -214,29 +263,49 @@
           <div class="form-row pl-4 pb-2 pt-2">
             <div class="position-relative form-check col-sm-6 col-md-3">
               <label class="form-check-label">
-                <input id="project" name="task_type" type="radio" class="form-check-input" checked
-                  disabled />Project</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input id="job" name="task_type" type="radio" class="form-check-input" disabled />job</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input id="SLA" name="task_type" type="radio" class="form-check-input" disabled />SLA</label>
+                <input
+                  id="edit-project"
+                  name="task_type"
+                  type="radio"
+                  class="form-check-input"
+                  onclick="edit_type_show('project')"
+                  checked />Project</label
+              >
             </div>
 
             <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"><input id="resource" name="task_type" type="radio"
-                  class="form-check-input" disabled />Resource</label>
+              <label class="form-check-label">
+                <input
+                  id="edit-SLA"
+                  name="task_type"
+                  type="radio"
+                  onclick="edit_type_show('SLA')"
+                  class="form-check-input" />SLA</label
+              >
+            </div>
+
+            <div class="position-relative form-check col-sm-6 col-md-3">
+              <label class="form-check-label"
+                ><input
+                  id="edit-resource"
+                  name="task_type"
+                  type="radio"
+                  onclick="edit_type_show('resource')"
+                  class="form-check-input" />Resource</label
+              >
             </div>
           </div>
 
           <div class="form-row pt-2">
             <div class="col-md-6">
               <div class="position-relative form-group">
-                <label for="business_unit" class="">Business Unit</label><select name="city" id="business_unit"
-                  type="text" class="form-control" disabled>
+                <label for="business_unit" class="">Business Unit</label
+                ><select
+                  name="city"
+                  id="business_unit"
+                  type="text"
+                  class="form-control"
+                  disabled>
                   <option value="JC">JC</option>
                   <option value="JIS">JIS</option>
                   <option value="HK">HK</option>
@@ -248,22 +317,17 @@
               </div>
             </div>
           </div>
-          <div class="form-row pb-2">
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input id="open" name="project_status" type="radio" class="form-check-input" checked />Open</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input id="closed" name="project_status" type="radio" class="form-check-input" />Closed</label>
-            </div>
-          </div>
 
           <div class="form-row pt-2">
             <div class="col-md-6">
               <div class="position-relative form-group">
-                <label for="client" class="">Client</label><select name="city" id="client" type="text"
-                  class="form-control" disabled>
+                <label for="client" class="">Client</label
+                ><select
+                  name="city"
+                  id="client"
+                  type="text"
+                  class="form-control"
+                  disabled>
                   <option value="client1">client1</option>
                   <option value="client2">client2</option>
                   <option value="client3">client3</option>
@@ -274,43 +338,235 @@
 
             <div class="col-md-6">
               <div class="position-relative form-group">
-                <label for="description" class="">Description</label><select name="city" id="client" type="text"
-                  class="form-control" disabled>
-                  <option value=" description1"> description1</option>
-                  <option value=" description2"> description2</option>
-                  <option value=" description3"> description3</option>
-                  <option value=" description4"> description4</option>
+                <label for="description" class="">Description</label
+                ><select
+                  name="city"
+                  id="client"
+                  type="text"
+                  class="form-control"
+                  disabled>
+                  <option value=" description1">description1</option>
+                  <option value=" description2">description2</option>
+                  <option value=" description3">description3</option>
+                  <option value=" description4">description4</option>
                 </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Planned Start Date</label><input name="date" id="planned_start_date"
-                  placeholder="date placeholder" type="date" class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">Planned End Date</label><input name="date" id="planned_end_date"
-                  placeholder="date placeholder" type="date" class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_start_date">Actual start Date</label><input name="date" id="actual_start_date"
-                  placeholder="date placeholder" type="date" class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_end_date">Actual End Date</label><input name="date" id="actual_end_date"
-                  placeholder="date placeholder" type="date" class="form-control" />
               </div>
             </div>
           </div>
 
+          <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs show">
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_start_date">Planned Start Date</label
+                ><input
+                  name="date"
+                  id="planned_start_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_end_date">Planned End Date</label
+                ><input
+                  name="date"
+                  id="planned_end_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="actual_start_date">Actual start Date</label
+                ><input
+                  name="date"
+                  id="actual_start_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="actual_end_date">Actual End Date</label
+                ><input
+                  name="date"
+                  id="actual_end_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Open</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Closed</label
+              >
+            </div>
+          </div>
 
+          <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
+          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs">
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_start_date">Start Date</label
+                ><input
+                  name="date"
+                  id="planned_start_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_end_date">End Date</label
+                ><input
+                  name="date"
+                  id="planned_end_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="sla_cost">Cost</label
+                ><input
+                  name="date"
+                  id="sla_cost"
+                  placeholder=""
+                  type="number"
+                  class="form-control" />
+              </div>
+            </div>
+
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Open</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Closed</label
+              >
+            </div>
+          </div>
+
+          <!-- 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 Resource Edit 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 -->
+          <div id="resource-edit-div" class="form-row pt-2 edit-forms-divs">
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="resource_name">Resource Name</label
+                ><input
+                  name="date"
+                  id="resource_name"
+                  placeholder=""
+                  type="text"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_ID">Employee ID</label
+                ><input
+                  name="date"
+                  id="emp_ID"
+                  placeholder=""
+                  type="text"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_email">Email ID</label
+                ><input
+                  name="date"
+                  id="emp_email"
+                  placeholder=""
+                  type="email"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_cost">Cost</label
+                ><input
+                  name="date"
+                  id="emp_cost"
+                  placeholder=""
+                  type="number"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="vertical" class="">Vertical</label
+                ><select
+                  name="city"
+                  id="vertical"
+                  type="text"
+                  class="form-control">
+                  <option value="Oracle">Oracle</option>
+                  <option value="something">something</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="role" class="">Role</label
+                ><select name="city" id="role" type="text" class="form-control">
+                  <option value="view">View</option>
+                  <option value="eidt">Edit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Billable</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Non-Billable</label
+              >
+            </div>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -323,111 +579,29 @@
   </div>
 </div>
 
-<!-- ====================== Create Client modal====================== -->
+<!-- ===================== client detail modal ====================== -->
 
-<!-- <div class="modal fade" id="create-client-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create New Client</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2 border-bottom">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input id="project" name="task_type" type="radio" class="form-check-input" checked />Project</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input id="job" name="task_type" type="radio" class="form-check-input" />Job</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"><input id="SLA" name="task_type" type="radio"
-                  class="form-check-input" />SLA</label>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"><input id="resource" name="task_type" type="radio"
-                  class="form-check-input" />Resource</label>
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label><select name="city" id="client" type="text"
-                  class="form-control">
-                  <option value="-">Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know" selected>know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label><select name="city" id="client" type="text"
-                  class="form-control">
-                  <option value="-" selected>Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know">know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Business Unit</label><select name="city" id="business_unit"
-                  type="text" class="form-control">
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-<!-- ===================== Record detail modal ====================== -->
-
-<div class="modal fade" id="client-detail-modal" tabindex="-1" role="dialog" aria-labelledby="Client detail"
+<div
+  class="modal fade"
+  id="client-detail-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="Client detail"
   aria-hidden="true">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Record details</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <table class="table table-borderless" style="width: 100%;">
+        <table class="table table-borderless" style="width: 100%">
           <tr>
             <td class="">Business Unit:</td>
             <td class="">JC</td>
@@ -485,3 +659,4 @@
     </div>
   </div>
 </div>
+<script src="assets/Scripts/logic.js"></script>
