@@ -38,7 +38,8 @@
                   </li>
                   <li>
                     <a href="./admin_view_activity.html">
-                      <i class="fa fa-fw metismenu-icon"></i>View Resource tasks
+                      <i class="fa fa-fw metismenu-icon"></i>View Resource
+                      tasks
                     </a>
                   </li>
 
@@ -104,13 +105,12 @@
                                     <div
                                       class="row p-3 pt-0 d-flex flex-wrap card-sub-header">
                                       <h4 class="">Clients</h4>
-                                      
-                                      <button
-                                        class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2"
-                                        data-toggle="modal"
-                                        data-target="#create-client-modal">
+
+                                      <a
+                                        href="/admin_create_client.html"
+                                        class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
                                         Create New Client
-                                      </button>
+                                      </a>
                                     </div>
                                     <table
                                       id="example"
@@ -147,14 +147,22 @@
                                               data-toggle="modal"
                                               data-target="#edit-client-modal"
                                               title="Edit record.">
-                                              <i class="fa fa-fw" aria-hidden="true" ></i>
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
                                             </button>
                                             <button
                                               class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
                                               data-toggle="modal"
                                               data-target="#client-detail-modal"
                                               title="Record detail">
-                                              <i class="fa fa-fw" aria-hidden="true" ></i>
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
                                             </button>
                                           </td>
                                         </tr>
@@ -174,14 +182,22 @@
                                               data-toggle="modal"
                                               data-target="#edit-client-modal"
                                               title="Edit record.">
-                                              <i class="fa fa-fw" aria-hidden="true" ></i>
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
                                             </button>
                                             <button
                                               class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
                                               data-toggle="modal"
                                               data-target="#client-detail-modal"
                                               title="Record detail">
-                                              <i class="fa fa-fw" aria-hidden="true" ></i>
+                                              <i
+                                                class="fa fa-fw"
+                                                aria-hidden="true"
+                                                ></i
+                                              >
                                             </button>
                                           </td>
                                         </tr>
@@ -216,6 +232,7 @@
       </div>
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
+
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
   </body>
 </html>
@@ -247,41 +264,34 @@
             <div class="position-relative form-check col-sm-6 col-md-3">
               <label class="form-check-label">
                 <input
-                  id="project"
+                  id="edit-project"
                   name="task_type"
                   type="radio"
                   class="form-check-input"
-                  checked disabled/>Project</label
+                  onclick="edit_type_show('project')"
+                  checked />Project</label
               >
             </div>
+
             <div class="position-relative form-check col-sm-6 col-md-3">
               <label class="form-check-label">
                 <input
-                  id="job"
+                  id="edit-SLA"
                   name="task_type"
                   type="radio"
-                  class="form-check-input"
-                  disabled/>job</label
+                  onclick="edit_type_show('SLA')"
+                  class="form-check-input" />SLA</label
               >
             </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  disabled/>SLA</label
-              >
-            </div>
-            
+
             <div class="position-relative form-check col-sm-6 col-md-3">
               <label class="form-check-label"
                 ><input
-                  id="resource"
+                  id="edit-resource"
                   name="task_type"
                   type="radio"
-                  class="form-check-input" disabled/>Resource</label
+                  onclick="edit_type_show('resource')"
+                  class="form-check-input" />Resource</label
               >
             </div>
           </div>
@@ -294,7 +304,8 @@
                   name="city"
                   id="business_unit"
                   type="text"
-                  class="form-control" disabled>
+                  class="form-control"
+                  disabled>
                   <option value="JC">JC</option>
                   <option value="JIS">JIS</option>
                   <option value="HK">HK</option>
@@ -304,26 +315,6 @@
                   <option value="JBS_devices">JBS Devices</option>
                 </select>
               </div>
-            </div>
-          </div>
-          <div class="form-row pb-2">
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" checked/>Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
             </div>
           </div>
 
@@ -352,15 +343,19 @@
                   name="city"
                   id="client"
                   type="text"
-                  class="form-control" disabled>
-                  <option value=" description1"> description1</option>
-                  <option value=" description2"> description2</option>
-                  <option value=" description3"> description3</option>
-                  <option value=" description4"> description4</option>
+                  class="form-control"
+                  disabled>
+                  <option value=" description1">description1</option>
+                  <option value=" description2">description2</option>
+                  <option value=" description3">description3</option>
+                  <option value=" description4">description4</option>
                 </select>
               </div>
             </div>
+          </div>
 
+          <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs show">
             <div class="col-md-6">
               <div class="position-relative form-group">
                 <label for="planned_start_date">Planned Start Date</label
@@ -405,9 +400,173 @@
                   class="form-control" />
               </div>
             </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Open</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Closed</label
+              >
+            </div>
           </div>
 
-          
+          <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
+          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs">
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_start_date">Start Date</label
+                ><input
+                  name="date"
+                  id="planned_start_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="planned_end_date">End Date</label
+                ><input
+                  name="date"
+                  id="planned_end_date"
+                  placeholder="date placeholder"
+                  type="date"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="sla_cost">Cost</label
+                ><input
+                  name="date"
+                  id="sla_cost"
+                  placeholder=""
+                  type="number"
+                  class="form-control" />
+              </div>
+            </div>
+
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Open</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Closed</label
+              >
+            </div>
+          </div>
+
+          <!-- 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 Resource Edit 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 -->
+          <div id="resource-edit-div" class="form-row pt-2 edit-forms-divs">
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="resource_name">Resource Name</label
+                ><input
+                  name="date"
+                  id="resource_name"
+                  placeholder=""
+                  type="text"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_ID">Employee ID</label
+                ><input
+                  name="date"
+                  id="emp_ID"
+                  placeholder=""
+                  type="text"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_email">Email ID</label
+                ><input
+                  name="date"
+                  id="emp_email"
+                  placeholder=""
+                  type="email"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="emp_cost">Cost</label
+                ><input
+                  name="date"
+                  id="emp_cost"
+                  placeholder=""
+                  type="number"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="vertical" class="">Vertical</label
+                ><select
+                  name="city"
+                  id="vertical"
+                  type="text"
+                  class="form-control">
+                  <option value="Oracle">Oracle</option>
+                  <option value="something">something</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="position-relative form-group">
+                <label for="role" class="">Role</label
+                ><select name="city" id="role" type="text" class="form-control">
+                  <option value="view">View</option>
+                  <option value="eidt">Edit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="open"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input"
+                  checked />Billable</label
+              >
+            </div>
+            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+              <label class="form-check-label">
+                <input
+                  id="closed"
+                  name="project_status"
+                  type="radio"
+                  class="form-check-input" />Non-Billable</label
+              >
+            </div>
+          </div>
         </form>
       </div>
       <div class="modal-footer">
@@ -420,140 +579,7 @@
   </div>
 </div>
 
-<!-- ====================== Create Client modal====================== -->
-
-<div
-  class="modal fade"
-  id="create-client-modal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Create New Client</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2 border-bottom">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="project"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Project</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="job"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Job</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />SLA</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="resource"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input" />Resource</label
-              >
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control">
-                  <option value="-">Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know" selected>know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control">
-                  <option value="-" selected>Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know">know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Business Unit</label
-                ><select
-                  name="city"
-                  id="business_unit"
-                  type="text"
-                  class="form-control">
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" class="btn btn-primary">Create</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ===================== Record detail modal ====================== -->
+<!-- ===================== client detail modal ====================== -->
 
 <div
   class="modal fade"
@@ -575,7 +601,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <table class="table table-borderless" style="width: 100%;">
+        <table class="table table-borderless" style="width: 100%">
           <tr>
             <td class="">Business Unit:</td>
             <td class="">JC</td>
@@ -633,3 +659,4 @@
     </div>
   </div>
 </div>
+<script src="assets/Scripts/logic.js"></script>

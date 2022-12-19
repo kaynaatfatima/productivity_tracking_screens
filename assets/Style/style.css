@@ -38589,7 +38589,20 @@ input[type='checkbox']{
     background-color: rgba(29, 29, 29, 0.9);
 }
 
- {
+{
     scrollbar-color: #330867 #F5F5F5;
 }
 
+.edit-forms-divs{
+  display: none;
+}
+.edit-forms-divs.show{
+  display: flex;
+}
+
+.create-forms-divs{
+  display: none;
+}
+.create-forms-divs.show{
+  display: flex;
+}
