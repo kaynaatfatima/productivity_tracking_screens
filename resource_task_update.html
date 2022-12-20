@@ -99,149 +99,159 @@
                                 <!-- ========================================================================================== -->
                                 <!-- ========================================================================================== -->
 
-                                <form id="resource-task-detail" class="">
-                                  <div
-                                    class="form-row p-4 m-2 border rounded task-detail-form">
-                                    
+                                <form
+                                  action=""
+                                  id="resource-task-detail"
+                                  class="">
+                                  <div class="">
+                                    <div
+                                      class="form-row p-4 m-2 mb-4 border rounded task-detail-form">
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label for="task_type1" class=""
+                                            >Type</label
+                                          ><select
+                                            name="task_type1"
+                                            id="task_type1"
+                                            type="text"
+                                            class="form-control">
+                                            <option value="project">
+                                              Project
+                                            </option>
+                                            <option value="job">Job</option>
+                                            <option value="SLA">SLA</option>
+                                          </select>
+                                        </div>
+                                      </div>
 
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_type1" class=""
-                                          >Type</label
-                                        ><select
-                                          name="city"
-                                          id="task_type1"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="project">
-                                            Project
-                                          </option>
-                                          <option value="job">Job</option>
-                                          <option value="SLA">SLA</option>
-                                        </select>
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label for="task_client1" class=""
+                                            >Client</label
+                                          ><select
+                                            name="task_client1"
+                                            id="task_client1"
+                                            type="text"
+                                            class="form-control">
+                                            <option value="client1">
+                                              client1
+                                            </option>
+                                            <option value="client2">
+                                              client2
+                                            </option>
+                                            <option value="client3">
+                                              client3
+                                            </option>
+                                            <option value="client4">
+                                              client4
+                                            </option>
+                                            <option value="happening">
+                                              happening
+                                            </option>
+                                          </select>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label
+                                            for="task_description1"
+                                            class=""
+                                            >Description</label
+                                          ><select
+                                            name="task_description1"
+                                            id="task_description1"
+                                            type="text"
+                                            class="form-control">
+                                            <option value=" description1">
+                                              description1
+                                            </option>
+                                            <option value=" description2">
+                                              description2
+                                            </option>
+                                            <option value=" description3">
+                                              description3
+                                            </option>
+                                            <option value=" description4">
+                                              description4
+                                            </option>
+                                            <option value="happening">
+                                              happening
+                                            </option>
+                                          </select>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label for="task_comment1" class=""
+                                            >Comment</label
+                                          ><input
+                                            class="form-control"
+                                            type="text"
+                                            name="task_comment1"
+                                            id="task_comment1" />
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label for="task_date1">Date</label
+                                          ><input
+                                            name="task_date1"
+                                            id="task_date1"
+                                            placeholder="date placeholder"
+                                            type="date"
+                                            class="form-control" />
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <div
+                                          class="position-relative form-group">
+                                          <label for="task_hours1" class=""
+                                            >Hours</label
+                                          ><select
+                                            name="task_hours1"
+                                            id="task_hours1"
+                                            type="text"
+                                            class="form-control">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                            <option value="">11</option>
+                                            <option value="">12</option>
+                                            <option value="">13</option>
+                                            <option value="">14</option>
+                                          </select>
+                                        </div>
                                       </div>
                                     </div>
-
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_client1" class=""
-                                          >Client</label
-                                        ><select
-                                          name="city"
-                                          id="task_client1"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="client1">
-                                            client1
-                                          </option>
-                                          <option value="client2">
-                                            client2
-                                          </option>
-                                          <option value="client3">
-                                            client3
-                                          </option>
-                                          <option value="client4">
-                                            client4
-                                          </option>
-                                          <option value="happening">
-                                            happening
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_description1" class=""
-                                          >Description</label
-                                        ><select
-                                          name="city"
-                                          id="task_description1"
-                                          type="text"
-                                          class="form-control">
-                                          <option value=" description1">
-                                            description1
-                                          </option>
-                                          <option value=" description2">
-                                            description2
-                                          </option>
-                                          <option value=" description3">
-                                            description3
-                                          </option>
-                                          <option value=" description4">
-                                            description4
-                                          </option>
-                                          <option value="happening">
-                                            happening
-                                          </option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_comment1" class=""
-                                          >Comment</label
-                                        ><input
-                                          class="form-control"
-                                          type="text"
-                                          name=""
-                                          id="task_comment1" />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_date1">Date</label
-                                        ><input
-                                          name="date"
-                                          id="task_date1"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
-                                      </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                      <div class="position-relative form-group">
-                                        <label for="task_hours1" class=""
-                                          >Hours</label
-                                        ><select
-                                          name="city"
-                                          id="task_hours1"
-                                          type="text"
-                                          class="form-control">
-                                          <option value="">1</option>
-                                          <option value="">2</option>
-                                          <option value="">3</option>
-                                          <option value="">4</option>
-                                          <option value="">5</option>
-                                          <option value="">6</option>
-                                          <option value="">7</option>
-                                          <option value="">8</option>
-                                          <option value="">9</option>
-                                          <option value="">10</option>
-                                          <option value="">11</option>
-                                          <option value="">12</option>
-                                          <option value="">13</option>
-                                          <option value="">14</option>
-                                        </select>
-                                      </div>
-                                    </div>
-
-                                    <button
-                                      class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-1 btn-wide-2x m-auto"
-                                      onclick="add_new_task()">
-                                      Add New
-                                    </button>
                                   </div>
-                                  <div class="m-auto">
-                                    <button
-                                      type="submit"
-                                      class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine m-2 float-right">
-                                      Save
-                                    </button>
-                                  </div>
+                                  <button
+                                    type="submit"
+                                    class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine m-2 float-right">
+                                    Save
+                                  </button>
+                                  <button
+                                    type="button"
+                                    id="add-new-task-btn"
+                                    class="add-task btn btn-secondary btn-hover-shine btn-shadow m-2 btn-wide-2x float-right"
+                                    onclick="add_new_task()">
+                                    Add New
+                                  </button>
                                 </form>
 
                                 <!-- ========================================================================================== -->
@@ -272,5 +282,6 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/Scripts/custom.js"></script>
   </body>
 </html>

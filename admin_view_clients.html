@@ -98,116 +98,146 @@
                           <div class="col-md-12">
                             <div class="main-card mb-3 card">
                               <div class="card-body">
-                                <div class="mb-3 card">
-                                  <div class="card-body">
-                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
-                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
-                                    <div
-                                      class="row p-3 pt-0 d-flex flex-wrap card-sub-header">
-                                      <h4 class="">Clients</h4>
+                                <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY START 👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                <div
+                                  class="row p-3 pt-0 d-flex flex-wrap card-sub-header">
+                                  <h4 class="">Clients</h4>
 
-                                      <a
-                                        href="/admin_create_client.html"
-                                        class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
-                                        Create New Client
-                                      </a>
-                                    </div>
-                                    <table
-                                      id="example"
-                                      class="mdl-data-table text-center"
-                                      style="min-width: 100%">
-                                      <thead>
-                                        <tr>
-                                          <th>Type</th>
-                                          <th>BU</th>
-                                          <th>Status</th>
-                                          <th>Client</th>
-                                          <th>Description</th>
-                                          <th>PSD</th>
-                                          <th>PED</th>
-                                          <th>ASD</th>
-                                          <th>AED</th>
-                                          <th>Action</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <td>Resource</td>
-                                          <td>JC</td>
-                                          <td>Billable</td>
-                                          <td>JBS</td>
-                                          <td>Punjab Agriculture</td>
-                                          <td>03-12-22</td>
-                                          <td>03-12-23</td>
-                                          <td>04-12-22</td>
-                                          <td>04-12-23</td>
-                                          <td>
-                                            <button
-                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                              data-toggle="modal"
-                                              data-target="#edit-client-modal"
-                                              title="Edit record.">
-                                              <i
-                                                class="fa fa-fw"
-                                                aria-hidden="true"
-                                                ></i
-                                              >
-                                            </button>
-                                            <button
-                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                              data-toggle="modal"
-                                              data-target="#client-detail-modal"
-                                              title="Record detail">
-                                              <i
-                                                class="fa fa-fw"
-                                                aria-hidden="true"
-                                                ></i
-                                              >
-                                            </button>
-                                          </td>
-                                        </tr>
-                                        <tr>
-                                          <td>Job</td>
-                                          <td>JBS</td>
-                                          <td>Open</td>
-                                          <td>JBS</td>
-                                          <td>Productivity Tracking System</td>
-                                          <td>03-11-22</td>
-                                          <td>03-12-23</td>
-                                          <td>04-11-22</td>
-                                          <td>04-12-23</td>
-                                          <td>
-                                            <button
-                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                              data-toggle="modal"
-                                              data-target="#edit-client-modal"
-                                              title="Edit record.">
-                                              <i
-                                                class="fa fa-fw"
-                                                aria-hidden="true"
-                                                ></i
-                                              >
-                                            </button>
-                                            <button
-                                              class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
-                                              data-toggle="modal"
-                                              data-target="#client-detail-modal"
-                                              title="Record detail">
-                                              <i
-                                                class="fa fa-fw"
-                                                aria-hidden="true"
-                                                ></i
-                                              >
-                                            </button>
-                                          </td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-
-                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
-                                    <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
-                                  </div>
+                                  <a
+                                    href="/admin_create_client.html"
+                                    class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine mr-2">
+                                    Create New Client
+                                  </a>
                                 </div>
+                                <table id="view-client-table" class="table table-hover" style="min-width:100%">
+                                  <thead class="">
+                                      <tr>
+                                        <th class="col-md-1">Type</th>
+                                        <th class="col-md-1">BU</th>
+                                        <th class="col-md-1">Status</th>
+                                        <th class="col-md-1">Client</th>
+                                        <th class="col-md-1">Description</th>
+                                        <th class="col-md-1">PSD</th>
+                                        <th class="col-md-1">PED</th>
+                                        <th class="col-md-1">ASD</th>
+                                        <th class="col-md-1">AED</th>
+                                        <th class="col-md-1">Action</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                        <td>Resource</td>
+                                        <td>JC</td>
+                                        <td>Billable</td>
+                                        <td>JBS</td>
+                                        <td>Punjab Agriculture</td>
+                                        <td>03-12-22</td>
+                                        <td>03-12-23</td>
+                                        <td>04-12-22</td>
+                                        <td>04-12-23</td>
+                                        <td>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#edit-client-modal"
+                                            title="Edit record.">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#client-detail-modal"
+                                            title="Record detail">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      
+                                      <tr>
+                                        <td>Resource</td>
+                                        <td>JC</td>
+                                        <td>Billable</td>
+                                        <td>JBS</td>
+                                        <td>Punjab Agriculture</td>
+                                        <td>03-12-22</td>
+                                        <td>03-12-23</td>
+                                        <td>04-12-22</td>
+                                        <td>04-12-23</td>
+                                        <td>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#edit-client-modal"
+                                            title="Edit record.">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#client-detail-modal"
+                                            title="Record detail">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>Job</td>
+                                        <td>JBS</td>
+                                        <td>Open</td>
+                                        <td>JBS</td>
+                                        <td>Productivity Tracking System</td>
+                                        <td>03-11-22</td>
+                                        <td>03-12-23</td>
+                                        <td>04-11-22</td>
+                                        <td>04-12-23</td>
+                                        <td>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#edit-client-modal"
+                                            title="Edit record.">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                          <button
+                                            class="mt-2 btn btn-secondary btn-shadow btn-hover-shine mr-2"
+                                            data-toggle="modal"
+                                            data-target="#client-detail-modal"
+                                            title="Record detail">
+                                            <i
+                                              class="fa fa-fw"
+                                              aria-hidden="true"
+                                              ></i
+                                            >
+                                          </button>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  
+                                </table>
+
+                                <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
+                                <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
                               </div>
                             </div>
                           </div>
@@ -234,6 +264,31 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
 
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".table").DataTable({
+          //disable sorting on last column
+          columnDefs: [{orderable: false, targets: 5}],
+          language: {
+            //customize pagination prev and next buttons: use arrows instead of words
+            paginate: {
+              previous: '<span class="fa fa-chevron-left"></span>',
+              next: '<span class="fa fa-chevron-right"></span>'
+            },
+            //customize number of elements to be displayed
+            lengthMenu:
+              'Display <select class="form-control input-sm">' +
+              '<option value="10">10</option>' +
+              '<option value="20">20</option>' +
+              '<option value="30">30</option>' +
+              '<option value="40">40</option>' +
+              '<option value="50">50</option>' +
+              '<option value="-1">All</option>' +
+              "</select> results"
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
@@ -262,14 +317,15 @@
         <form class="">
           <div class="form-row pl-4 pb-2 pt-2">
             <div class="position-relative form-check col-sm-6 col-md-3">
+              <!-- All the radios are disabeled -->
+              <!-- Add class=show to the related form below that you want to show in the edit window page according to created client type. -->
               <label class="form-check-label">
                 <input
                   id="edit-project"
                   name="task_type"
                   type="radio"
                   class="form-check-input"
-                  onclick="edit_type_show('project')"
-                  checked />Project</label
+                  disabled />Project</label
               >
             </div>
 
@@ -279,8 +335,9 @@
                   id="edit-SLA"
                   name="task_type"
                   type="radio"
-                  onclick="edit_type_show('SLA')"
-                  class="form-check-input" />SLA</label
+                  class="form-check-input"
+                  checked
+                  disabled />SLA</label
               >
             </div>
 
@@ -290,8 +347,8 @@
                   id="edit-resource"
                   name="task_type"
                   type="radio"
-                  onclick="edit_type_show('resource')"
-                  class="form-check-input" />Resource</label
+                  class="form-check-input"
+                  disabled />Resource</label
               >
             </div>
           </div>
@@ -355,7 +412,7 @@
           </div>
 
           <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
-          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs show">
+          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs">
             <div class="col-md-6">
               <div class="position-relative form-group">
                 <label for="planned_start_date">Planned Start Date</label
@@ -422,7 +479,7 @@
           </div>
 
           <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
-          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs">
+          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs show">
             <div class="col-md-6">
               <div class="position-relative form-group">
                 <label for="planned_start_date">Start Date</label
@@ -456,25 +513,26 @@
                   class="form-control" />
               </div>
             </div>
-
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
+            <div class="col-md-12 form-row">
+              <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                <label class="form-check-label">
+                  <input
+                    id="open"
+                    name="project_status"
+                    type="radio"
+                    class="form-check-input"
+                    checked />Open</label
+                >
+              </div>
+              <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                <label class="form-check-label">
+                  <input
+                    id="closed"
+                    name="project_status"
+                    type="radio"
+                    class="form-check-input" />Closed</label
+                >
+              </div>
             </div>
           </div>
 
@@ -601,7 +659,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <table class="table table-borderless" style="width: 100%">
+        <table class="table table-borderless" style="width: 100%; text-align: left;">
           <tr>
             <td class="">Business Unit:</td>
             <td class="">JC</td>
@@ -630,7 +688,7 @@
             <td class="align-text-top">Resources</td>
             <td class="">
               <table class="table">
-                <thead>
+                <thead class="bg-light text-dark">
                   <td>Name</td>
                   <td>Hours</td>
                 </thead>
@@ -659,4 +717,3 @@
     </div>
   </div>
 </div>
-<script src="assets/Scripts/logic.js"></script>

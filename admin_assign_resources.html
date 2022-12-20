@@ -38,10 +38,11 @@
                   </li>
                   <li>
                     <a href="./admin_view_activity.html">
-                      <i class="fa fa-fw metismenu-icon"></i>View Resource tasks
+                      <i class="fa fa-fw metismenu-icon"></i>View Resource
+                      tasks
                     </a>
                   </li>
-                  
+
                   <li class="mm-active">
                     <a href="./admin_assign_resources.html">
                       <i class="fa fa-fw metismenu-icon"></i>Assign Resources
@@ -107,118 +108,165 @@
                           <div class="col-md-12">
                             <div class="main-card mb-3 card">
                               <div class="card-body">
-
                                 <!-- ====================================== card body ========================================= -->
                                 <!-- ========================================================================================== -->
                                 <!-- ========================================================================================== -->
+                                <div
+                                  class="row mx-4 px-3 mt-4 d-flex flex-wrap card-sub-header">
+                                  <h4 class="">Assign Resources</h4>
 
-
-                                <form class="">
-                                  <div class="form-row pl-4 pb-4">
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3">
-                                      <label class="form-check-label">
-                                        <input
-                                          id="project"
-                                          name="task_type"
-                                          type="radio"
-                                          class="form-check-input" />Project</label
-                                      >
-                                    </div>
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3">
-                                      <label class="form-check-label">
-                                        <input
-                                          id="job"
-                                          name="task_type"
-                                          type="radio"
-                                          class="form-check-input" />Job</label
-                                      >
-                                    </div>
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3">
-                                      <label class="form-check-label"
-                                        ><input
-                                          id="SLA"
-                                          name="task_type"
-                                          type="radio"
-                                          class="form-check-input" />SLA</label
-                                      >
-                                    </div>
-                                    <div
-                                      class="position-relative form-check col-sm-6 col-md-3">
-                                      <label class="form-check-label"
-                                        ><input
-                                          id="resource"
-                                          name="task_type"
-                                          type="radio"
-                                          class="form-check-input" />Resource</label
-                                      >
-                                    </div>
-                                  </div>
-
-                                  <div class="form-row">
+                                </div>
+                                <form
+                                  action="submit"
+                                  id="assign-resource-form"
+                                  class="">
+                                  <div
+                                    class="form-row p-4 mx-2 mb-0 mt-2">
                                     <div class="col-md-6">
                                       <div class="position-relative form-group">
-                                        <label for="client" class=""
+                                        <label for="task_type" class=""
+                                          >Type</label
+                                        ><select
+                                          name="task_type"
+                                          id="task_type"
+                                          type="text"
+                                          class="form-control">
+                                          <option value="project1">
+                                            project1
+                                          </option>
+                                          <option value="job1">job</option>
+                                          <option value="SLA1">SLA</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="position-relative form-group">
+                                        <label for="task_client" class=""
                                           >Client</label
-                                        ><input
-                                          name="city"
-                                          id="client"
+                                        ><select
+                                          name="task_client"
+                                          id="task_client"
                                           type="text"
-                                          class="form-control" />
+                                          class="form-control">
+                                          <option value="client1">
+                                            client1
+                                          </option>
+                                          <option value="client2">
+                                            client2
+                                          </option>
+                                          <option value="client3">
+                                            client3
+                                          </option>
+                                          <option value="client4">
+                                            client4
+                                          </option>
+                                          <option value="happening">
+                                            happening
+                                          </option>
+                                        </select>
                                       </div>
                                     </div>
 
                                     <div class="col-md-6">
                                       <div class="position-relative form-group">
-                                        <label for="description" class=""
+                                        <label for="task_decription" class=""
                                           >Description</label
-                                        ><input
-                                          name="city"
-                                          id="description"
+                                        ><select
+                                          name="task_decription"
+                                          id="task_decription"
                                           type="text"
-                                          class="form-control" />
+                                          class="form-control">
+                                          <option value=" description1">
+                                            description1
+                                          </option>
+                                          <option value=" description2">
+                                            description2
+                                          </option>
+                                          <option value=" description3">
+                                            description3
+                                          </option>
+                                          <option value=" description4">
+                                            description4
+                                          </option>
+                                        </select>
                                       </div>
                                     </div>
-
                                     <div class="col-md-6">
                                       <div class="position-relative form-group">
-                                        <label for="start_date"
-                                          >Start Date</label
-                                        ><input
-                                          name="date"
-                                          id="start_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
+                                        <label for="pm_email" class=""
+                                          >Project Manager</label
+                                        ><select
+                                          name="pm_email"
+                                          id="pm_email"
+                                          type="text"
+                                          class="form-control">
+                                          <option value="">
+                                            1PM@gmail.com
+                                          </option>
+                                          <option value="">
+                                            2PM@gmail.com
+                                          </option>
+                                          <option value="">
+                                            3PM@gmail.com
+                                          </option>
+                                          <option value="">
+                                            4PM@gmail.com
+                                          </option>
+                                        </select>
                                       </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    
+                                    
+                                  </div>
+                                  <div class="p-4 mx-4 border rounded task-detail-form">
+                                    <div class="">
+                                    <div id="new-resource-input1" class="col-md-12">
                                       <div class="position-relative form-group">
-                                        <label for="end_date">End Date</label
-                                        ><input
-                                          name="date"
-                                          id="end_date"
-                                          placeholder="date placeholder"
-                                          type="date"
-                                          class="form-control" />
+                                        <label for="res_email1" class=""
+                                          >1 - Resource</label
+                                        ><select
+                                          name="res_email1"
+                                          id="res_email1"
+                                          type="text"
+                                          class="form-control">
+                                          <option value="">
+                                            1resourceEmail1jbs.live
+                                          </option>
+                                          <option value="">
+                                            2resourceEmail2jbs.live
+                                          </option>
+                                          <option value="">
+                                            3resourceEmail3jbs.live
+                                          </option>
+                                          <option value="">
+                                            4resourceEmail4jbs.live
+                                          </option>
+                                        </select>
                                       </div>
+                                    </div></div>
+                                    <div class="">
+                                      <button
+                                      id="add-new-resource-btn"
+                                        type="button"
+                                        class="add-task btn btn-secondary btn-hover-shine btn-shadow ml-3 btn-wide-2x"
+                                        onclick="add_new_resource()"
+                                        >
+                                        Add New
+                                      </button>
                                     </div>
                                   </div>
-
-                                  <button
-                                    class="mt-2 btn btn-primary btn-shadow btn-wide-2x btn-hover-shine">
-                                    Create
-                                  </button>
+                                  
+                                    <button
+                                      type="submit"
+                                      class="btn btn-primary btn-shadow btn-wide-2x btn-hover-shine float-right btn-wide-2x m-4">
+                                      Save
+                                    </button>
+                                  </div>
                                 </form>
 
                                 <!-- ========================================================================================== -->
                                 <!-- ========================================================================================== -->
                                 <!-- ====================================== card body ========================================= -->
-
-
-
                               </div>
                             </div>
                           </div>
@@ -244,5 +292,6 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/Scripts/custom.js"></script>
   </body>
 </html>

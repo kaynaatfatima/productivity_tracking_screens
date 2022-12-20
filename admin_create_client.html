@@ -112,332 +112,395 @@
                                         data-target="#create-client-modal">
                                         Create New
                                       </button>
-                                      
                                     </div>
-                                    
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="edit-project"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  checked
-                   />Project</label
-              >
-            </div>
 
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="edit-SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                   />SLA</label
-              >
-            </div>
+                                    <form class="">
+                                      <div class="form-row pl-4 pb-2 pt-2">
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="create-project"
+                                              name="task_type"
+                                              type="radio"
+                                              class="form-check-input"
+                                              onclick="create_type_show('project')"
+                                              checked />Project</label
+                                          >
+                                        </div>
 
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="edit-resource"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                   />Resource</label
-              >
-            </div>
-          </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="create-SLA"
+                                              name="task_type"
+                                              type="radio"
+                                              onclick="create_type_show('SLA')"
+                                              class="form-check-input" />SLA</label
+                                          >
+                                        </div>
 
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="business_unit" class="">Business Unit</label
-                ><select
-                  name="city"
-                  id="business_unit"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3">
+                                          <label class="form-check-label"
+                                            ><input
+                                              id="create-resource"
+                                              name="task_type"
+                                              type="radio"
+                                              onclick="create_type_show('resource')"
+                                              class="form-check-input" />Resource</label
+                                          >
+                                        </div>
+                                      </div>
 
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value="client1">client1</option>
-                  <option value="client2">client2</option>
-                  <option value="client3">client3</option>
-                  <option value="client4">client4</option>
-                </select>
-              </div>
-            </div>
+                                      <div class="form-row pt-2">
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="business_unit" class=""
+                                              >Business Unit</label
+                                            ><select
+                                              name="city"
+                                              id="business_unit"
+                                              type="text"
+                                              class="form-control"
+                                              >
+                                              <option value="JC">JC</option>
+                                              <option value="JIS">JIS</option>
+                                              <option value="HK">HK</option>
+                                              <option value="JCS">JCS</option>
+                                              <option value="ENA">ENA</option>
+                                              <option value="JBS_export">
+                                                JBS Export
+                                              </option>
+                                              <option value="JBS_devices">
+                                                JBS Devices
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
 
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value=" description1">description1</option>
-                  <option value=" description2">description2</option>
-                  <option value=" description3">description3</option>
-                  <option value=" description4">description4</option>
-                </select>
-              </div>
-            </div>
-          </div>
+                                      <div class="form-row pt-2">
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="client" class=""
+                                              >Client</label
+                                            ><select
+                                              name="city"
+                                              id="client"
+                                              type="text"
+                                              class="form-control"
+                                              >
+                                              <option value="client1">
+                                                client1
+                                              </option>
+                                              <option value="client2">
+                                                client2
+                                              </option>
+                                              <option value="client3">
+                                                client3
+                                              </option>
+                                              <option value="client4">
+                                                client4
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
 
-          <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
-          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs show">
-            
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="description" class=""
+                                              >Description</label
+                                            ><select
+                                              name="city"
+                                              id="client"
+                                              type="text"
+                                              class="form-control"
+                                              >
+                                              <option value=" description1">
+                                                description1
+                                              </option>
+                                              <option value=" description2">
+                                                description2
+                                              </option>
+                                              <option value=" description3">
+                                                description3
+                                              </option>
+                                              <option value=" description4">
+                                                description4
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
 
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Planned Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">Planned End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_start_date">Actual start Date</label
-                ><input
-                  name="date"
-                  id="actual_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_end_date">Actual End Date</label
-                ><input
-                  name="date"
-                  id="actual_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
-          
-          <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
-          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs">
-            
+                                      <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
+                                      <div
+                                        id="project-create-div"
+                                        class="form-row pt-2 create-forms-divs show">
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="planned_start_date"
+                                              >Planned Start Date</label
+                                            ><input
+                                              name="date"
+                                              id="planned_start_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="planned_end_date"
+                                              >Planned End Date</label
+                                            ><input
+                                              name="date"
+                                              id="planned_end_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="actual_start_date"
+                                              >Actual start Date</label
+                                            ><input
+                                              name="date"
+                                              id="actual_start_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="actual_end_date"
+                                              >Actual End Date</label
+                                            ><input
+                                              name="date"
+                                              id="actual_end_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="open"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input"
+                                              checked />Open</label
+                                          >
+                                        </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="closed"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input" />Closed</label
+                                          >
+                                        </div>
+                                      </div>
 
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="sla_cost">Cost</label
-                ><input
-                  name="date"
-                  id="sla_cost"
-                  placeholder=""
-                  type="number"
-                  class="form-control" />
-              </div>
-            </div>
-            
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
+                                      <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
+                                      <div
+                                        id="SLA-create-div"
+                                        class="form-row pt-2 create-forms-divs">
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="planned_start_date"
+                                              >Start Date</label
+                                            ><input
+                                              name="date"
+                                              id="planned_start_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="planned_end_date"
+                                              >End Date</label
+                                            ><input
+                                              name="date"
+                                              id="planned_end_date"
+                                              placeholder="date placeholder"
+                                              type="date"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="sla_cost">Cost</label
+                                            ><input
+                                              name="date"
+                                              id="sla_cost"
+                                              placeholder=""
+                                              type="number"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
 
-          <!-- 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 Resource Edit 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 -->
-          <div id="resource-edit-div" class="form-row pt-2 edit-forms-divs">
-            
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="resource_name">Resource Name</label
-                ><input
-                  name="date"
-                  id="resource_name"
-                  placeholder=""
-                  type="text"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_ID">Employee ID</label
-                ><input
-                  name="date"
-                  id="emp_ID"
-                  placeholder=""
-                  type="text"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_email">Email ID</label
-                ><input
-                  name="date"
-                  id="emp_email"
-                  placeholder=""
-                  type="email"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_cost">Cost</label
-                ><input
-                  name="date"
-                  id="emp_cost"
-                  placeholder=""
-                  type="number"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="vertical" class="">Vertical</label
-                ><select
-                  name="city"
-                  id="vertical"
-                  type="text"
-                  class="form-control"
-                  >
-                  <option value="Oracle">Oracle</option>
-                  <option value="something">something</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="role" class="">Role</label
-                ><select
-                  name="city"
-                  id="role"
-                  type="text"
-                  class="form-control"
-                  >
-                  <option value="view">View</option>
-                  <option value="eidt">Edit</option>
-                </select>
-              </div>
-            </div>
-            
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Billable</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Non-Billable</label
-              >
-            </div>
-          </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4 mt-4 pt-2">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="open"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input"
+                                              checked />Open</label
+                                          >
+                                        </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4 mt-4 pt-2">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="closed"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input" />Closed</label
+                                          >
+                                        </div>
+                                      </div>
 
-        </form>
-      
-                                    
+                                      <!-- 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 Resource Edit 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 -->
+                                      <div
+                                        id="resource-create-div"
+                                        class="form-row pt-2 create-forms-divs">
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="resource_name"
+                                              >Resource Name</label
+                                            ><input
+                                              name="date"
+                                              id="resource_name"
+                                              placeholder=""
+                                              type="text"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="emp_ID"
+                                              >Employee ID</label
+                                            ><input
+                                              name="date"
+                                              id="emp_ID"
+                                              placeholder=""
+                                              type="text"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="emp_email"
+                                              >Email ID</label
+                                            ><input
+                                              name="date"
+                                              id="emp_email"
+                                              placeholder=""
+                                              type="email"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="emp_cost">Cost</label
+                                            ><input
+                                              name="date"
+                                              id="emp_cost"
+                                              placeholder=""
+                                              type="number"
+                                              class="form-control" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="vertical" class=""
+                                              >Vertical</label
+                                            ><select
+                                              name="city"
+                                              id="vertical"
+                                              type="text"
+                                              class="form-control">
+                                              <option value="Oracle">
+                                                Oracle
+                                              </option>
+                                              <option value="something">
+                                                something
+                                              </option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div
+                                            class="position-relative form-group">
+                                            <label for="role" class=""
+                                              >Role</label
+                                            ><select
+                                              name="city"
+                                              id="role"
+                                              type="text"
+                                              class="form-control">
+                                              <option value="view">View</option>
+                                              <option value="eidt">Edit</option>
+                                            </select>
+                                          </div>
+                                        </div>
+
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="open"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input"
+                                              checked />Billable</label
+                                          >
+                                        </div>
+                                        <div
+                                          class="position-relative form-check col-sm-6 col-md-3 pl-4">
+                                          <label class="form-check-label">
+                                            <input
+                                              id="closed"
+                                              name="project_status"
+                                              type="radio"
+                                              class="form-check-input" />Non-Billable</label
+                                          >
+                                        </div>
+                                        
+                                      </div>
+                                      <button class="btn btn-primary btn-shadow btn-wide-2x btn-hover-shine float-right btn-wide-2x">
+                                          Create
+                                        </button>
+                                    </form>
+
                                     <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
                                     <!-- 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 CARD BODY END 👽👽👽👽👽👽👽👽👽👽👽👽👽👽 -->
                                   </div>
@@ -467,363 +530,8 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <script type="text/javascript" src="/assets/Scripts/script.js"></script>
-    <script type="text/javascript" src="/assets/Scripts/logic.js"></script>
   </body>
 </html>
-
-<!-- ====================== Edit Client modal====================== -->
-
-<div
-  class="modal fade"
-  id="edit-client-modal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form class="">
-          <div class="form-row pl-4 pb-2 pt-2">
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="edit-project"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                  checked
-                   />Project</label
-              >
-            </div>
-
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label">
-                <input
-                  id="edit-SLA"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                   />SLA</label
-              >
-            </div>
-
-            <div class="position-relative form-check col-sm-6 col-md-3">
-              <label class="form-check-label"
-                ><input
-                  id="edit-resource"
-                  name="task_type"
-                  type="radio"
-                  class="form-check-input"
-                   />Resource</label
-              >
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="business_unit" class="">Business Unit</label
-                ><select
-                  name="city"
-                  id="business_unit"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value="JC">JC</option>
-                  <option value="JIS">JIS</option>
-                  <option value="HK">HK</option>
-                  <option value="JCS">JCS</option>
-                  <option value="ENA">ENA</option>
-                  <option value="JBS_export">JBS Export</option>
-                  <option value="JBS_devices">JBS Devices</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="form-row pt-2">
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value="client1">client1</option>
-                  <option value="client2">client2</option>
-                  <option value="client3">client3</option>
-                  <option value="client4">client4</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
-                  type="text"
-                  class="form-control"
-                  disabled>
-                  <option value=" description1">description1</option>
-                  <option value=" description2">description2</option>
-                  <option value=" description3">description3</option>
-                  <option value=" description4">description4</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <!-- 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 Project Edit 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 -->
-          <div id="project-edit-div" class="form-row pt-2 edit-forms-divs show">
-            
-
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Planned Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">Planned End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_start_date">Actual start Date</label
-                ><input
-                  name="date"
-                  id="actual_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="actual_end_date">Actual End Date</label
-                ><input
-                  name="date"
-                  id="actual_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
-          
-          <!-- 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 SLA Edit 🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍🐍 -->
-          <div id="SLA-edit-div" class="form-row pt-2 edit-forms-divs">
-            
-
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="planned_start_date">Start Date</label
-                ><input
-                  name="date"
-                  id="planned_start_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="planned_end_date">End Date</label
-                ><input
-                  name="date"
-                  id="planned_end_date"
-                  placeholder="date placeholder"
-                  type="date"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="sla_cost">Cost</label
-                ><input
-                  name="date"
-                  id="sla_cost"
-                  placeholder=""
-                  type="number"
-                  class="form-control" />
-              </div>
-            </div>
-            
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Open</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Closed</label
-              >
-            </div>
-          </div>
-
-          <!-- 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 Resource Edit 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 -->
-          <div id="resource-edit-div" class="form-row pt-2 edit-forms-divs">
-            
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="resource_name">Resource Name</label
-                ><input
-                  name="date"
-                  id="resource_name"
-                  placeholder=""
-                  type="text"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_ID">Employee ID</label
-                ><input
-                  name="date"
-                  id="emp_ID"
-                  placeholder=""
-                  type="text"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_email">Email ID</label
-                ><input
-                  name="date"
-                  id="emp_email"
-                  placeholder=""
-                  type="email"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="position-relative form-group">
-                <label for="emp_cost">Cost</label
-                ><input
-                  name="date"
-                  id="emp_cost"
-                  placeholder=""
-                  type="number"
-                  class="form-control" />
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="vertical" class="">Vertical</label
-                ><select
-                  name="city"
-                  id="vertical"
-                  type="text"
-                  class="form-control"
-                  >
-                  <option value="Oracle">Oracle</option>
-                  <option value="something">something</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="position-relative form-group">
-                <label for="role" class="">Role</label
-                ><select
-                  name="city"
-                  id="role"
-                  type="text"
-                  class="form-control"
-                  >
-                  <option value="view">View</option>
-                  <option value="eidt">Edit</option>
-                </select>
-              </div>
-            </div>
-            
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="open"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input"
-                  checked />Billable</label
-              >
-            </div>
-            <div class="position-relative form-check col-sm-6 col-md-3 pl-4">
-              <label class="form-check-label">
-                <input
-                  id="closed"
-                  name="project_status"
-                  type="radio"
-                  class="form-check-input" />Non-Billable</label
-              >
-            </div>
-          </div>
-
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-          Close
-        </button>
-        <button type="submit" class="btn btn-primary">Save Changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ====================== Create Client modal====================== -->
 
@@ -848,7 +556,7 @@
       </div>
       <div class="modal-body">
         <form class="">
-          <div class="form-row pl-4 pb-2 pt-2 border-bottom">
+          <div class="form-row p-3">
             <div class="position-relative form-check col-sm-6 col-md-3">
               <label class="form-check-label">
                 <input
@@ -883,35 +591,25 @@
           <div class="form-row pt-2">
             <div class="col-md-6">
               <div class="position-relative form-group">
-                <label for="client" class="">Client</label
-                ><select
-                  name="city"
-                  id="client"
+                <label for="new_client">Client name</label
+                ><input
+                  name="date"
+                  id="new_client"
+                  placeholder=""
                   type="text"
-                  class="form-control">
-                  <option value="-">Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know" selected>know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
+                  class="form-control" />
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="position-relative form-group">
-                <label for="description" class="">Description</label
-                ><select
-                  name="city"
-                  id="client"
+                <label for="new_description">Description</label
+                ><input
+                  name="date"
+                  id="new_description"
+                  placeholder=""
                   type="text"
-                  class="form-control">
-                  <option value="-" selected>Select</option>
-                  <option value="id">I dont</option>
-                  <option value="know">know</option>
-                  <option value="whats">what's</option>
-                  <option value="happening">happening</option>
-                </select>
+                  class="form-control" />
               </div>
             </div>
           </div>
@@ -948,4 +646,4 @@
   </div>
 </div>
 
-<!-- ===================== client detail modal ====================== -->
+<script type="text/javascript" src="/assets/Scripts/custom.js"></script>
