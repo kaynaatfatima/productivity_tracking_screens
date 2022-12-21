@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/productivity-frontend/node_modules
+/productivity-frontend/.pnp
+/productivity-frontend/.pnp.js
+
+# testing
+/productivity-frontend/coverage
+
+# production
+/productivity-frontend/build
+
+# misc
+/productivity-frontend/.DS_Store
+/productivity-frontend/.env.local
+/productivity-frontend/.env.development.local
+/productivity-frontend/.env.test.local
+/productivity-frontend/.env.production.local
+
+/productivity-frontend/npm-debug.log*
+/productivity-frontend/yarn-debug.log*
+/productivity-frontend/yarn-error.log*
